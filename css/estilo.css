@@ -1,0 +1,316 @@
+@font-face{
+    font-family: "asenine";
+    src: url("fonts/ASENINE_.ttf")
+    /* src: url("http://www.dafont.com/es/asenine.font"); */
+}
+/*BODY*/
+body, html{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+/*REDES*/
+#redes{
+    position: relative;
+    top: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: #388142;
+    z-index: 3;
+}
+#redes ul{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: #388142;
+    list-style-type: none;
+    text-align: center;
+}
+#redes ul li{
+    height: 100%;
+    width: 30px;
+    float: right;
+    text-align: center;
+    background-color: transparent;
+    transition: background 0.25s linear 0.05s;
+    transition: width 0.25s linear 0.05s;
+}
+#redes li a{
+    font-family: "asenine";
+    font-size: 120%;
+    letter-spacing: 0.1em;
+    color: white;
+    background-color: transparent;
+    display: block;
+    position: relative;
+    height: 100%;
+    top: 15%;
+    text-decoration: none;
+    transition: color 0.1s linear 0.05s;
+}
+#redes li:hover{
+    background-color: white;
+}
+#redes li a:hover{
+    color: #388142;
+}
+/*ENCABEZADO*/
+#encabezado{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    width: 100%;
+    vertical-align: middle;
+    background-color: white;
+    z-index: 3;
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    height: 50%;
+    width: auto;
+}
+/*BARRAS DE NAVEGACION*/
+.navegacion{
+    height: 40px;
+    background-color: #388142;
+    z-index: 3;
+}
+#menu{
+    position: relative;
+}
+#flotante{
+    position: fixed;
+    top: 0px;
+    width: 100%;;
+    z-index: 2;
+}
+.navegacion ul{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: #388142;
+    list-style-type: none;
+    text-align: center;
+}
+.navegacion li{
+    height: 100%;
+    width: 19.6%;
+    float: left;
+    text-align: center;
+    background-color: transparent;
+    transition: background 0.25s linear 0.05s;
+    transition: width 0.25s linear 0.05s;
+}
+.navegacion li a{
+    font-family: "asenine";
+    font-size: 160%;
+    letter-spacing: 0.15em;
+    color: white;
+    background-color: transparent;
+    display: block;
+    position: relative;
+    height: 100%;
+    top: 12%;
+    text-decoration: none;
+    transition: color 0.1s linear 0.05s;
+}
+.navegacion li:hover{
+    background-color: white;
+    width: 21.6%;
+}
+.navegacion li a:hover{
+    color: #388142;
+}
+/*PRESENTACION (CARRUSEL)*/
+#expandida img{
+    /*border: 5px solid;
+    border-color: #388142;*/
+    height: 300px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#carrusel{
+    overflow: hidden;
+    height: 100px;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    align-content: center;
+}
+#miniaturas{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;/*#388142;*/
+    list-style-type: none;
+    text-align: center;
+    clear: right;
+    cursor: pointer;
+}
+#miniaturas li{
+    display: inline;
+}
+.min{
+    margin: 0px 5px 0px 5px;
+    height: 80px;
+    transition: height 0.4s linear 0.05s;
+    transform: rotate();
+    -webkit-transform: rotate(0deg);
+}
+.min:hover{
+    height: 100px;
+}
+/*CARRUSEL*/
+#myCarousel{
+    margin: 0px 0px 0px 0px;
+    z-index: 1;
+}
+/*SECCIONES*/
+#principal{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.descripcion{
+    font-family: "asenine";
+    letter-spacing: 0.1em;
+    font-size: 140%;
+    color: black;
+    z-index: 1;
+}
+.titulo{
+    font-family: "asenine";
+    letter-spacing: 0.2em;
+    font-size: 250%;
+    color: black;
+    height: 100px;
+    overflow: hidden;
+    transition: letter-spacing 0.8s ease-out 0.03s;
+    z-index: 1;
+}
+.titulo:hover{
+    letter-spacing: 0.4em;
+}
+.titulo p{
+    margin-top: 60px;
+    margin-bottom: 0;
+    bottom: 0;
+}
+.seccion{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+#contacto{
+    height: 95%;
+}
+#presentacion{
+    margin: 0;
+    padding-bottom: 0;
+}
+hr{
+    margin: 20px auto 0 auto;
+    height: 0.6px;
+    width: 80%;
+    background-image: linear-gradient(to right, #ccc, rgba(30, 30, 30, 0.2), #ccc);
+}
+/*CONTACTO*/
+#facebook{
+    text-decoration: none;
+    color: black;
+}
+#contacto i{
+    margin: 0 5px 0 5px;
+}
+#facebook:hover, #facebook i:hover{
+    transform: translateY(4px);
+}
+/*DEJAR UN MENSAJE*/
+#formulario input, #formulario textarea{
+    display: inline-block;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-color: rgba(51, 51, 51, 0.38);
+    letter-spacing: 0.1em;
+    transition: width 1s linear 0.05s;
+    transition: border-bottom 0.4s linear 0.05s;
+    transition: border-color 0.4s linear 0.05s;
+}
+#formulario p{
+    font-size: 150%;
+}
+#formulario input:focus, #formulario textarea:focus{
+    outline: 0;
+    border-bottom: 2px solid;
+    border-color: #388142;
+}
+#nombre, #email{
+    width: 34.5%;
+}
+#nombre:focus, #email:focus{
+    width: 38%;
+}
+#asunto, #mensaje{
+    width: 70%;
+    margin-top: 5px;
+}
+
+#mensaje{
+    height: 150px;
+    transition: padding-bottom 0.5s ease-out 0.05s;
+}
+#mensaje:focus, #asunto:focus{
+    width: 74%;
+    padding-bottom: 0px;
+}
+#enviar{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: 1px solid;
+    border-color: white;
+    background-color: #388142;
+    letter-spacing: 0.1em;
+    font-size: 110%;
+    color: white;
+    transition: width 1s linear 0.05s;
+    transition: color 0.01ms linear 0.05s;
+    transition: border-color 0.01s linear 0.05s;
+    transition: background 0.01s linear 0.05s;
+}
+#enviar:hover{
+    width: 22%;
+    color: #388142;
+    border-color: #388142;
+    background-color: white;
+}
+#enviar:active{
+    transform: translateY(4px);
+}
+#enviar:focus{
+    outline: 0;
+}
+/*FOOTER*/
+#final{
+    position: relative;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #388142;
+    text-align: center;
+    overflow: hidden;
+}
+#final p{
+    font-family: "asenine";
+    font-size: 120%;
+    letter-spacing: 0.2em;
+    color: white;
+    margin-top: 10px;
+}
